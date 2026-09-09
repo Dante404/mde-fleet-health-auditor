@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=70"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mde-fleet-health-auditor"
+version = "0.1.0"
+description = "Read-only Microsoft Defender for Endpoint fleet health and update reporting"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+keywords = ["microsoft-defender", "endpoint-security", "fleet-health", "security-operations"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Security",
+]
+dependencies = [
+  "msal>=1.31,<2",
+  "requests>=2.32,<3",
+]
+
+[project.scripts]
+mde-health-audit = "mde_health_auditor.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

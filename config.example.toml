@@ -1,0 +1,8 @@
+[audit]
+stale_after_days = 7
+critical_stale_after_days = 30
+update_failure_critical_count = 3
+
+[minimum_client_versions]
+# Add approved numeric baselines using OSPlatform values returned by your tenant.
+# A generic Windows, Linux, macOS, or default key can also be used.

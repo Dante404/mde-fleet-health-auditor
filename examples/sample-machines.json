@@ -1,0 +1,40 @@
+{
+  "value": [
+    {
+      "id": "sample-device-001",
+      "computerDnsName": "ws-101.example.invalid",
+      "firstSeen": "2026-08-01T08:00:00Z",
+      "lastSeen": "2026-09-08T18:20:00Z",
+      "osPlatform": "Windows11",
+      "version": "24H2",
+      "osBuild": 26100,
+      "osArchitecture": "64-bit",
+      "healthStatus": "Active",
+      "onboardingStatus": "Onboarded",
+      "rbacGroupName": "Workstations",
+      "riskScore": "None",
+      "exposureLevel": "Low",
+      "isAadJoined": true,
+      "aadDeviceId": "00000000-0000-0000-0000-000000000001",
+      "machineTags": ["Managed"]
+    },
+    {
+      "id": "sample-device-002",
+      "computerDnsName": "ws-204.example.invalid",
+      "firstSeen": "2026-04-14T09:10:00Z",
+      "lastSeen": "2026-07-01T06:30:00Z",
+      "osPlatform": "Windows11",
+      "version": "23H2",
+      "osBuild": 22631,
+      "osArchitecture": "64-bit",
+      "healthStatus": "ImpairedCommunication",
+      "onboardingStatus": "CanBeOnboarded",
+      "rbacGroupName": "Workstations",
+      "riskScore": "High",
+      "exposureLevel": "Medium",
+      "isAadJoined": true,
+      "aadDeviceId": "00000000-0000-0000-0000-000000000002",
+      "machineTags": ["Investigation"]
+    }
+  ]
+}

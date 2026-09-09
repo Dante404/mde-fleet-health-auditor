@@ -1,0 +1,20 @@
+{
+  "results": [
+    {
+      "DeviceId": "sample-device-001",
+      "ClientVersion": "10.9000.1000.0",
+      "SensorHealthState": "Healthy",
+      "HuntingOnboardingStatus": "Onboarded",
+      "UpdateFailureCount": 0,
+      "LatestUpdateFailure": null
+    },
+    {
+      "DeviceId": "sample-device-002",
+      "ClientVersion": "10.8000.500.0",
+      "SensorHealthState": "ImpairedCommunication",
+      "HuntingOnboardingStatus": "CanBeOnboarded",
+      "UpdateFailureCount": 4,
+      "LatestUpdateFailure": "2026-08-29T12:45:00Z"
+    }
+  ]
+}
