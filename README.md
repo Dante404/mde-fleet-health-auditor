@@ -1,5 +1,7 @@
 # MDE Fleet Health Auditor
 
+[![Validation](https://github.com/Dante404/mde-fleet-health-auditor/actions/workflows/validate.yml/badge.svg)](https://github.com/Dante404/mde-fleet-health-auditor/actions/workflows/validate.yml)
+
 A read-only command-line tool for reviewing Microsoft Defender for Endpoint
 device health. It finds stale inventory, unhealthy sensors, onboarding
 problems, elevated risk or exposure, old client versions, and recent Defender
@@ -36,6 +38,18 @@ mde-health-audit \
 
 The command prints a short summary and creates timestamped CSV and JSON files.
 Reports contain findings only unless --all-devices is supplied.
+
+### Windows PowerShell quick start (offline sample)
+
+From PowerShell on Windows, with Python 3.11 or newer installed:
+
+```powershell
+py -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -e .
+.\.venv\Scripts\mde-health-audit.exe --machines-file examples/sample-machines.json --hunting-file examples/sample-hunting.json --config config.example.toml --output-dir reports
+```
+
+The offline example uses synthetic device records. It does not sign in, call Microsoft APIs, or alter endpoint configuration. Inspect the generated CSV and JSON in `reports/` (which is ignored by Git). Use the live-audit instructions below only when you have the appropriate Entra registration, permissions and authorization.
 
 ## Live audit
 
